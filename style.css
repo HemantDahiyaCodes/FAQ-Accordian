@@ -31,13 +31,16 @@ body {
   box-shadow: 4px 10px 20px pink;
   border-radius: 5%;
   overflow: hidden;
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  #faq-box {
     width: 90%;
     height: 60%;
-    #main-container {
+  }
+
+  #main-container {
     background-image: url(background-pattern-mobile.svg);
-    }
   }
 }
 
