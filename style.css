@@ -1,73 +1,72 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-size: 16px;
-  }
-  /* Main container styling */
-  #main-container {
-    height: 100vh;
-    width: 100%;
-    background-image: url(background-pattern-desktop.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(275, 100%, 97%);
-  }
-  
-  /* FAQ box */
-  #faq-box {
-    background-color: hsl(0, 0%, 100%);
-    font-family: "Work Sans";
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 35%;
-    box-shadow: 4px 10px 20px pink;
-    border-radius: 5%;
-    overflow: hidden;
-  
-    @media (max-width: 768px) {
-      width: 90%;
-      height: 60%;
-      #main-container {
-      background-image: url(background-pattern-mobile.svg);
-      }
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+/* Main container styling */
+#main-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(background-pattern-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(275, 100%, 97%);
+}
+
+/* FAQ box */
+#faq-box {
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Work Sans";
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 35%;
+  box-shadow: 4px 10px 20px pink;
+  border-radius: 5%;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 60%;
+    #main-container {
+    background-image: url(background-pattern-mobile.svg);
     }
   }
-  
-  /* icon box */
-  .icon-box {
-    display: flex;
-    align-items: center;
-    font-size: 3rem;
-    padding: 1rem 1rem 0 1rem;
-    gap: 1rem;
-  }
-  
-  .question-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 1rem;
-  }
-  
-  button {
-    padding: 0;
-    border: 0;
-    background-color: white;
-    cursor: pointer;
-  }
-  
-  .question-box > p:hover {
-    color: blue;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-  
+}
+
+/* icon box */
+.icon-box {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1rem 1rem 0 1rem;
+  gap: 1rem;
+}
+
+.question-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.question-box > p:hover {
+  color: blue;
+  transition: 0.5s;
+  cursor: pointer;
+}
