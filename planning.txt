@@ -1,0 +1,3 @@
+set the background of the body
+create a main container - display will be flexbox - column
+when the user clicks on the `+` icon, the paragraph will show up and the sign will change to `-`.

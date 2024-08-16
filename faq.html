@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Accordian</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-size: 16px;
+      }
+      /* Main container styling */
+      #main-container {
+        height: 100vh;
+        width: 100%;
+        background-image: url(background-pattern-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(275, 100%, 97%);
+      }
+
+      /* FAQ box */
+      #faq-box {
+        background-color: hsl(0, 0%, 100%);
+        font-family: "Work Sans";
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 35%;
+        box-shadow: 1px 10px 30px pink;
+        border-radius: 5%;
+      }
+
+      /* icon box */
+      .icon-box {
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+        padding: 1rem 1rem 0 1rem;
+        gap: 1rem;
+      }
+
+      .question-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 1rem;
+      }
+
+      button {
+        padding: 0;
+        border: 0;
+        background-color: white;
+        cursor: pointer;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="faq-box">
+        <div class="icon-box">
+          <img src="icon-star.svg" alt="star icon for design" />
+          <p>FAQs</p>
+        </div>
+        <div class="question-box">
+          <p>what is Frontend Mentor</p>
+          <p></p>
+          <button><img src="icon-plus.svg" alt="expand icon" /></button>
+        </div>
+        <div class="question-box">
+          <p>is Frontend Mentor free?</p>
+          <p></p>
+          <button><img src="icon-plus.svg" alt="expand icon" /></button>
+        </div>
+        <div class="question-box">
+          <p>Can I use Frontend Mentor projects in my portfolio</p>
+          <p></p>
+          <button><img src="icon-plus.svg" alt="expand icon" /></button>
+        </div>
+        <div class="question-box">
+          <p>How can I get help if I'm stuck on a challenge</p>
+          <p></p>
+          <button><img src="icon-plus.svg" alt="expan icon" /></button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const buttonOne = document.querySelector("#first");
+      const paraOne = document.querySelector("#para-one");
+
+      buttonOne.addEventListener("click", () => {
+        // document.getElementById("para-one").style.backgroundColor = "red";
+        document.getElementById("para-one").style.height = "100vh";
+        document.getElementById("para-one").style.border = "3px solid pink";
+        document.getElementById("para-one").style.padding =
+          "1rem 1rem 1rem 1rem";
+        paraOne.innerHTML = "this is made by me!";
+      });
+    </script>
+  </body>
+</html>
